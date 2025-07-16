@@ -61,12 +61,16 @@ h2 {
   gap: 10px;
 }
 
-.form-group input {
+.form-group input,
+.form-group select {
   flex: 1 1 200px;
   padding: 12px 15px;
   border: 1px solid #ddd;
   border-radius: 5px;
   font-size: 1rem;
+  background: #fff;
+  color: var(--text);
+  box-sizing: border-box;
 }
 
 .form-group button {

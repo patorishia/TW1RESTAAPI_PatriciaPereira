@@ -1,6 +1,6 @@
 // JS para operações CRUD com Fetch API
 
-
+const API_URL_ALUNOS = 'http://localhost:3001/api/alunos';
 const API_URL_CURSOS = 'http://localhost:3001/api/cursos';
 
 document.addEventListener('DOMContentLoaded', () => {
