@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "mongodb": "^6.17.0",
+    "mongoose": "^8.16.3"
+  },
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3",
+    "nodemon": "^3.1.10"
+  },
+  "scripts": {
+    "json-server": "json-server --watch mock-data/bd.json --port 3001",
+    "start": "node backend/server.js",
+    "dev": "nodemon backend/server.js"
+  }
+
+
+}

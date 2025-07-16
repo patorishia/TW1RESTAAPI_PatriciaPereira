@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "2ccfe257-eaf8-42f7-b17f-10d6cab34d76",
+		"name": "API Simulada - JSON-Server",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40097137"
+	},
+	"item": [
+		{
+			"name": "GET - Lista de Alunos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/alunos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"alunos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST - Criar Aluno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Maria\",\r\n  \"apelido\": \"Pereira\",\r\n  \"curso\": 2,\r\n  \"anoCurricular\": 1\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/alunos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"alunos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE - Remover Aluno",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nome\": \"Maria\",\r\n  \"apelido\": \"Pereira\",\r\n  \"curso\": 2,\r\n  \"anoCurricular\": 1\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3001/alunos/39cd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"alunos",
+						"39cd"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Lista de Cursos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/cursos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"cursos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET- Obter Aluno por id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/alunos/ad4e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"alunos",
+						"ad4e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PUT- Atualizar aluno",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n      \"nome\": \"Joana\",\r\n      \"apelido\": \"Silva\",\r\n      \"curso\": 1,\r\n      \"anoCurricular\": 2\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/alunos/6d47",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"alunos",
+						"6d47"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

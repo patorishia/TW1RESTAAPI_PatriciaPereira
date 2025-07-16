@@ -1,1 +1,54 @@
 <!-- Página CRUD de Alunos -->
+
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestão de Alunos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📚 Gestão de Alunos</h1>
+    <p>CRUD Completo com API RESTful</p>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Adicionar Novo Aluno</h2>
+      <form id="aluno-form">
+        <div class="form-group">
+          <input type="text" id="nome" placeholder="Nome" required />
+          <input type="text" id="apelido" placeholder="Apelido" required />
+          <input type="text" id="curso" placeholder="Curso" required />
+          <input type="number" id="anoCurricular" placeholder="Ano Curricular" required />
+          <button type="submit">➕ Adicionar</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="lista-section">
+      <h2>Lista de Alunos</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Apelido</th>
+            <th>Curso</th>
+            <th>Ano</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="alunos-body"></tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>Feito com ❤️ para TWT1RESTAPI</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
